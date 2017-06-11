@@ -150,6 +150,7 @@ def kernel(k):
                            status_ids = Status.objects(),
                            patches = patches,
                            devices = devs,
+                           org = app.config['GITHUB_ORG'],
                            authorized=logged_in())
 
 @app.route("/status/<string:c>")
