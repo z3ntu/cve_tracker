@@ -193,6 +193,7 @@ def update():
 @require_login
 def addcve():
     errstatus = "Generic error"
+    cve_id = None
     r = request.get_json()
     cve = r['cve_id']
     notes = r['cve_notes']
@@ -222,7 +223,7 @@ def addcve():
         elif len(notes) < 10:
             errstatus = "Notes have to be at least 10 characters!";
 
-    return jsonify({'error': errstatus})
+    return jsonify({'error': errstatus, 'cve_id': str(cve_id)})
 
 @app.route("/addkernel", methods=['POST'])
 @require_login
