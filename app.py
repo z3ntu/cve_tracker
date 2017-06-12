@@ -68,7 +68,15 @@ def require_login(f):
     @functools.wraps(f)
     def wrapper(*args, **kwargs):
         if not logged_in():
-            return jsonify({'error': 'not logged in'})
+            if not 'Apikey' in request.headers:
+                return jsonify({'error': 'not logged in'})
+            try:
+                with open(os.path.join(dir, 'apikeys.txt'), 'r') as keys:
+                    if request.headers.get('Apikey') == keys.readline().strip():
+                        return f(*args, **kwargs)
+                    return jsonify({'error': 'api key wrong'})
+            except FileNotFoundError:
+                return jsonify({'error': 'server not configured for api keys'})
         return f(*args, **kwargs)
     return wrapper
 
