@@ -1,5 +1,6 @@
 *.swp
 
+apikeys.txt
 app.cfg
 nohup.out
 __pycache__
