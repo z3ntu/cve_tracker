@@ -79,7 +79,9 @@
         CVEInfoDialog.access.notesField.setAttribute('empty', false);
         CVEInfoDialog.access.notesField.innerHTML = 'Loading ...';
         CVEInfoDialog.access.links.innerHTML = 'Loading ...';
-        CVEInfoDialog.access.edit.href = '/editcve/' + cve_name;
+        if (CVEInfoDialog.access.edit) {
+            CVEInfoDialog.access.edit.href = '/editcve/' + cve_name;
+        }
         CVEInfoDialog.access.compare.href = '/status/' + cve_name;
         CVEInfoDialog.element.setAttribute('cve_name', cve_name);
         CVEInfoDialog.element.setAttribute('cve_id', cve_id);
