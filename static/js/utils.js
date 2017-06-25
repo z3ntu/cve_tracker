@@ -61,4 +61,9 @@
         textarea.parentElement.removeChild(textarea);
     }
     window.copyToClipboard = copyToClipboard;
+
+    function limitValue(value, lower, upper) {
+        return Math.min(Math.max(lower, value), upper);
+    }
+    window.limitValue = limitValue;
 })();
