@@ -394,6 +394,13 @@
     "android_kernel_samsung_mondrianwifi": [
         "android_device_samsung_mondrianwifi"
     ],
+    "android_kernel_samsung_msm8916": [
+        "android_device_samsung_gprimelte",
+        "android_device_samsung_gprimeltespr",
+        "android_device_samsung_gprimeltexx",
+        "android_device_samsung_gtelwifiue",
+        "android_device_samsung_gtesqltespr"
+    ],
     "android_kernel_samsung_msm8930-common": [
         "android_device_samsung_lt02ltespr",
         "android_device_samsung_serrano3gxx",
