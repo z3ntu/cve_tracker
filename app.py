@@ -167,10 +167,10 @@ def show_devices():
         try:
             kernel = Kernel.objects.get(repo_name=kernelRepo)
         except:
-            next
+            continue
 
         if kernel["deprecated"]:
-            next
+            continue
 
         for repo in deviceRepos:
             vendor, device = utils.getVendorNameFromRepo(repo)
