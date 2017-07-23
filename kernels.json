@@ -64,6 +64,9 @@
     "android_kernel_cyanogen_mt6735": [
         "android_device_wileyfox_porridgek3"
     ],
+    "android_kernel_fairphone_msm8974": [
+        "android_device_fairphone_FP2"
+    ],
     "android_kernel_google_dragon": [
         "android_device_google_dragon"
     ],
@@ -404,7 +407,8 @@
         "android_device_samsung_gprimeltespr",
         "android_device_samsung_gprimeltexx",
         "android_device_samsung_gtelwifiue",
-        "android_device_samsung_gtesqltespr"
+        "android_device_samsung_gtesqltespr",
+        "android_device_samsung_j7ltespr"
     ],
     "android_kernel_samsung_msm8930-common": [
         "android_device_samsung_lt02ltespr",
