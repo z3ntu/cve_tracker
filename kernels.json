@@ -147,6 +147,9 @@
     "android_kernel_lenovo_msm8916": [
         "android_device_lenovo_A6020"
     ],
+    "android_kernel_lenovo_msm8953": [
+        "android_device_lenovo_kuntao"
+    ],
     "android_kernel_lenovo_msm8974": [
         "android_device_lenovo_kingdom"
     ],
@@ -277,6 +280,9 @@
     "android_kernel_nextbit_msm8992": [
         "android_device_nextbit_ether"
     ],
+    "android_kernel_nubia_msm8939": [
+        "android_device_nubia_nx512j"
+    ],
     "android_kernel_nubia_msm8996": [
         "android_device_nubia_nx531j"
     ],
@@ -359,6 +365,7 @@
     ],
     "android_kernel_samsung_hlte": [
         "android_device_samsung_hlte",
+        "android_device_samsung_hltechn",
         "android_device_samsung_hltespr",
         "android_device_samsung_hltetmo"
     ],
